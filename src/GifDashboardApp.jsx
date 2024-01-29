@@ -3,7 +3,7 @@ import { AddCategory, GifGrid } from "./components";
 
 export const GifDashboardApp = () => {
 
-  const [categories, setCategories] = useState(['One Punch']);
+  const [categories, setCategories] = useState(['Gif']);
   
   const onAddCategory = ( newCategory ) => {
   //  categories.push(newCategory);
@@ -15,7 +15,7 @@ export const GifDashboardApp = () => {
   return (
     <>
         {/* tttle  */}
-        <h1>Gif Dashboard</h1>
+        <h1 className="title">Gif Dashboard</h1>
       
 
         <AddCategory  

@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export const AddCategory = ({onNewCategory}) => {
 
-    const [inputValue, setInputValue] = useState('one punch');
+    const [inputValue, setInputValue] = useState('');
 
     const onInputChange = ({target}) => {
         //esto es para que no se recargue el imput
@@ -28,7 +28,7 @@ export const AddCategory = ({onNewCategory}) => {
 
     <form onSubmit={onSubmit}>
          <input type="text"  
-         placeholder="Buscar Gifs" 
+         placeholder="Search Gifs" 
          value={inputValue} 
         onChange={onInputChange}/>
     </form>
